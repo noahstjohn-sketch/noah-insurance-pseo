@@ -1,0 +1,26 @@
+---
+// src/pages/[topic]/[niche].astro
+// SSR mode. Only renders when topic.kind === 'atomic'.
+// Longtail topics: cross pages return 404 (avoids grammatically broken URLs).
+import Base from '../../layouts/Base.astro';
+import PageTemplate from '../../components/PageTemplate.astro';
+import { topics } from '../../data/topics.js';
+import { niches } from '../../data/niches.js';
+import { buildPageData } from '../../lib/page-data.js';
+
+const { topic: topicSlug, niche: nicheSlug } = Astro.params;
+const topic = topics.find(t => t.slug === topicSlug);
+const niche = niches.find(n => n.slug === nicheSlug);
+
+if (!topic || !niche) return Astro.redirect('/404');
+if (topic.kind !== 'atomic') return Astro.redirect('/404');
+
+const { faq, faqSchema, aboutText } = buildPageData(topic, niche);
+
+const title = `${topic.label} for ${niche.label} | Dr. Noah St. John | Neural Performance Architect`;
+const description = `${topic.label} for ${niche.label}: Release the Invisible Brake. Dr. Noah St. John. 28 years. $3 billion in client results. The Neural Performance Architect, available worldwide.`;
+const canonical = `https://insurance.noahstjohn.com/${topic.slug}/${niche.slug}`;
+---
+<Base title={title} description={description} canonical={canonical} faqSchema={faqSchema}>
+  <PageTemplate topic={topic} niche={niche} faq={faq} aboutText={aboutText} />
+</Base>
