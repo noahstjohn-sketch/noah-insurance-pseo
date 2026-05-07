@@ -14,7 +14,7 @@ export function buildPageData(topic, niche) {
 
   if (niche) {
     q1 = `What does ${topicLabel} for ${nicheLabel} involve with Dr. Noah St. John?`;
-    a1 = `${topicLabel} for ${nicheLabel} with Dr. Noah St. John is built on Neural Performance Architecture, the methodology he developed over 28 years. It diagnoses the Invisible Brake (the subconscious neural performance pattern that caps premium volume, retention, and EBITDA for ${nicheLower}) and releases it at the level where strategy alone cannot reach. The work combines a Performance Audit, the release protocol, and the architecture install that lets results compound at the agency-owner level.`;
+    a1 = `${topicLabel} for ${nicheLabel} with Dr. Noah St. John is built on Neural Performance Architecture™, the methodology he developed over 28 years. It diagnoses the Invisible Brake™ (the subconscious neural performance pattern that caps premium volume, retention, and EBITDA for ${nicheLower}) and releases it at the level where strategy alone cannot reach. The work combines a Performance Audit, the release protocol, and the architecture install that lets results compound at the agency-owner level.`;
 
     q2 = `Why do ${nicheLabel} need a specialized ${topicLower} approach?`;
     a2 = `${nicheLabel} typically hit a ceiling that no new producer comp plan, AMS migration, or specialty practice will move. That ceiling is the Invisible Brake. Dr. Noah St. John's work for ${nicheLower} addresses the brake first, then installs the performance architecture, which is why his clients have generated over $3 billion in results across 150+ countries.`;
@@ -35,7 +35,7 @@ export function buildPageData(topic, niche) {
     a7 = `Yes. Dr. Noah St. John works with ${nicheLower} in 150+ countries via virtual private coaching, Strategic Intensives, and on-stage keynotes. The Invisible Brake methodology is delivered remotely or in person without losing fidelity. Book the entry-point audit at noahstjohn.com/consulting.`;
   } else {
     q1 = `What is ${topicLabel} with Dr. Noah St. John?`;
-    a1 = `${topicLabel} with Dr. Noah St. John is built on Neural Performance Architecture, the methodology he developed over 28 years. It diagnoses the Invisible Brake (the subconscious neural performance pattern that caps insurance agency owners and broker principals below their potential) and releases it at the level where strategy alone cannot reach. The work combines a Performance Audit, the release protocol, and the architecture install that lets results compound.`;
+    a1 = `${topicLabel} with Dr. Noah St. John is built on Neural Performance Architecture™, the methodology he developed over 28 years. It diagnoses the Invisible Brake™ (the subconscious neural performance pattern that caps insurance agency owners and broker principals below their potential) and releases it at the level where strategy alone cannot reach. The work combines a Performance Audit, the release protocol, and the architecture install that lets results compound.`;
 
     q2 = `Who needs ${topicLabel} from Dr. Noah St. John?`;
     a2 = `${topicLabel} with Dr. Noah St. John is for insurance agency owners and broker principals who keep hitting the same ceiling despite world-class strategy, capital, and team. That ceiling is almost always the Invisible Brake. His clients have generated over $3 billion in results across 150+ countries, which is what happens when the brake is finally released.`;
